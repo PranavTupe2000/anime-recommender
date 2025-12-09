@@ -1,0 +1,12 @@
+langchain
+langchain-text-splitters
+langchain-community
+langchain_groq
+langchain_huggingface
+sentence-transformers
+chromadb
+pandas
+streamlit
+python-env
+
+-e .

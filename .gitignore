@@ -1,0 +1,8 @@
+ar-venv/
+dev/
+.env
+
+*.egg-info/
+*.egg
+
+info.o
