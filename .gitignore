@@ -1,8 +1,18 @@
 ar-venv/
 dev/
 .env
+chroma_db/
+
+logs/*
+!logs/.gitkeep
 
 *.egg-info/
 *.egg
+
+*/__pycache__/
+*/.pytest_cache/
+*/.mypy_cache/
+*/.mypy
+**/__pycache__
 
 info.o

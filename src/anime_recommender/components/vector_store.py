@@ -1,4 +1,4 @@
-from langchain_community.document_loader.csv_loader import CSVLoader # type: ignore
+from langchain_community.document_loaders.csv_loader import CSVLoader
 from langchain_text_splitters import CharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings

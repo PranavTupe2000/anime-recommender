@@ -1,5 +1,6 @@
 from anime_recommender.components.data_loader import AnimeDataLoader
 from anime_recommender.components.vector_store import VectorStoreBuilder
+from anime_recommender.config import ORIGINAL_CSV_PATH, PROCESSED_CSV_PATH
 from anime_recommender.utils import AnimeRecommenderException, get_logger
 
 import sys
@@ -10,7 +11,7 @@ def build_pipeline():
     try:
         logger.info("Starting to build pipeline...")
 
-        loader = AnimeDataLoader("data/anime_with_synopsis.csv" , "data/anime_updated.csv")
+        loader = AnimeDataLoader(ORIGINAL_CSV_PATH , PROCESSED_CSV_PATH)
         processed_csv = loader.load_and_process()
 
         logger.info("Data  loaded and processed...")
